@@ -1,54 +1,63 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>CV — Florencia Maidana</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV — Maria Florencia Maidana</title>
   <style>
-    :root{--bg:#eaf6fb;--text:#333}
-    body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial; margin:40px; color:var(--text)}
-    .wrap{max-width:920px;margin:0 auto}
-    .card{
-      display:inline-flex;
-      align-items:center;
-      gap:16px;
-      background:var(--bg);
-      padding:18px 22px;
-      border-radius:12px;
-      text-decoration:none;
-      color:var(--text);
-      box-shadow:0 1px 0 rgba(0,0,0,0.03);
-      transition:transform .12s,box-shadow .12s;
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      background-color: #fafafa;
+      color: #333;
     }
-    .card:hover{transform:translateY(-2px); box-shadow:0 6px 18px rgba(0,0,0,.06)}
-    .icon{
-      width:44px;height:44px;border-radius:8px;background:#fff;display:flex;align-items:center;justify-content:center;font-size:20px;box-shadow:0 1px 0 rgba(0,0,0,0.04)
+    h1 {
+      margin-bottom: 0.5em;
     }
-    h1{font-weight:600;margin-bottom:6px}
-    p.small{color:#666;font-size:14px;margin-top:10px}
-    a.small-link{font-size:14px;color:#555;text-decoration:underline;margin-left:14px}
-    @media (prefers-color-scheme:dark){
-      :root{--bg:#08303b;--text:#e7f8ff}
-      .card{background:#062528}
-      .icon{background:#022024}
+    p {
+      margin-bottom: 1.5em;
+    }
+    .card {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 15px 25px;
+      background-color: #eaf4ff;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #004080;
+      transition: background 0.2s ease;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .card:hover {
+      background-color: #d6eaff;
+    }
+    .secondary {
+      margin-left: 15px;
+      text-decoration: none;
+      color: #555;
+    }
+    .secondary:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <h1>Mi CV</h1>
-    <p>Click en el botón para <strong>abrir</strong> el PDF en una nueva pestaña. Si preferís que se descargue, usá el enlace "Descargar" debajo.</p>
+  <h1>Mi CV</h1>
+  <p>Hacé click en el botón para <strong>abrir</strong> el PDF en una nueva pestaña, o usá el link de <em>Descargar</em> si preferís bajarlo.</p>
 
-    <!-- Botón principal: abre el PDF en nueva pestaña -->
-    <a class="card" href="CV.pdf" target="_blank" rel="noopener" aria-label="Abrir CV en nueva pestaña">
-      <span class="icon">⬇</span>
-      <span style="font-weight:600">Download full CV here</span>
-    </a>
+  <!-- Botón principal para abrir en una nueva pestaña -->
+  <a class="card" href="MariaFlorenciaMaidana_DG_CV.pdf" target="_blank">
+    ⬇️ Download full CV here
+  </a>
 
-    <!-- Enlace secundario: fuerza descarga (opcional) -->
-    <a class="small-link" href="CV.pdf" download aria-label="Descargar CV">Descargar</a>
-
-    <p class="small">Archivo en la raíz del repo: <strong>CV.pdf</strong> — confirmá que el nombre coincida exactamente (mayúsculas/minúsculas).</p>
-  </div>
+  <!-- Link secundario para descargar directamente -->
+  <a class="secondary" href="MariaFlorenciaMaidana_DG_CV.pdf" download>Descargar</a>
 </body>
 </html>
